@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Slapfight</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row bg-primary">
+      <div class="col text-center">
+        <h1 class="text-white">Destroy a Stick Guy</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row pt-5 pm-5">
+      <div class="col d-flex align-items-center flex-column m-auto">
+        <h2>DEFENSE (<span id="defPow">0</span>)</h2>
+        <a id="defense1" class="btn btn-primary my-3" onclick="defense('defense1')">defense1</a>
+        <a id="defense2" class="btn btn-primary my-3" onclick="defense('defense2')">defense2</a>
+        <a id="defense3" class="btn btn-primary my-3" onclick="defense('defense3')">defense3</a>
+        <a id="stop" class="btn btn-primary my-3" onclick="defense('stop')">defenseoff</a>
+      </div>
+
+
+
+      <div class="col d-flex align-items-center flex-column">
+        <h2>HEALTH <span id="currentHealth">100</span>/100</h2>
+        <img class='img-fluid w-100 my-keep-pixel' id="stickGuy" src="./Assets/stickdude1.png" alt="stickguy">
+      </div>
+
+
+
+      <div class="col d-flex align-items-center flex-column ">
+        <h2>ATTACK</h2>
+        <a id="attack1" class="btn btn-primary my-3" onclick="attack('attack1')">attack1</a>
+        <a id="attack2" class="btn btn-primary my-3" onclick="attack('attack2')">attack2</a>
+        <a id="attack3" class="btn btn-primary my-3" onclick="attack('attack3')">attack3</a>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row bg-primary p-3"></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
